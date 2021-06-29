@@ -8,8 +8,8 @@ import jetbrains.exodus.env.Environment;
 import jetbrains.exodus.env.Store;
 import jetbrains.exodus.env.StoreConfig;
 import jetbrains.exodus.env.Transaction;
-import types.ABCIApplicationGrpc;
-import types.Types.*;
+import tendermint.abci.ABCIApplicationGrpc;
+import tendermint.abci.Types.*;
 
 import java.util.Arrays;
 import java.util.Collections;
