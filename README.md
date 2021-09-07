@@ -1,3 +1,6 @@
 ## Run
 
-Type ./gradlew run --args=<port number for gRPC server>
+On the main directory type:
+```
+./gradlew run --args=<port number for gRPC server>
+```
