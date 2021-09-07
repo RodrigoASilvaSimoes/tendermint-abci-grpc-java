@@ -7,9 +7,9 @@ import java.io.IOException;
 
 public class App {
     public static void main(String[] args) throws IOException, InterruptedException {
-        try (Environment env = Environments.newInstance("tmp/storage")) {
+        try (Environment env = Environments.newInstance("tmp/storage" + args[0])) {
             var app = new KVStoreApp(env);
-            var server = new GrpcServer(app, 26658);
+            var server = new GrpcServer(app, Integer.parseInt(args[0]));
             server.start();
             server.blockUntilShutdown();
         }
